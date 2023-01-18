@@ -64,7 +64,7 @@ const PanelCard = () => {
       selectedAdmType == null
     ) {
       axios
-        .get("http://localhost:4000/Adms/AllAdms")
+        .get("https://ah-backend-fi2p.onrender.com/Adms/AllAdms")
         .then((response) => {
           setProducts(response.data);
           console.log(products);
@@ -85,7 +85,7 @@ const PanelCard = () => {
       ) {
         axios
           .get(
-            "http://localhost:4000/Adms/AllAdmsFilterDocNum/" + documentNumber
+            "https://ah-backend-fi2p.onrender.com/Adms/AllAdmsFilterDocNum/" + documentNumber
           )
           .then((response) => {
             setProducts(response.data);
@@ -108,7 +108,7 @@ const PanelCard = () => {
         ) {
           axios
             .get(
-              "http://localhost:4000/Adms/AllAdmsFilterAgent/" +
+              "https://ah-backend-fi2p.onrender.com/Adms/AllAdmsFilterAgent/" +
                 agent["Agency Code"]
             )
             .then((response) => {
@@ -130,7 +130,7 @@ const PanelCard = () => {
           ) {
             axios
               .get(
-                "http://localhost:4000/Adms/AllAdmsFilterUser/" +
+                "https://ah-backend-fi2p.onrender.com/Adms/AllAdmsFilterUser/" +
                   user["username"]
               )
               .then((response) => {
@@ -152,7 +152,7 @@ const PanelCard = () => {
             ) {
               axios
                 .get(
-                  "http://localhost:4000/Adms/AllAdmsFilterAdmNum/" + admNumber
+                  "https://ah-backend-fi2p.onrender.com/Adms/AllAdmsFilterAdmNum/" + admNumber
                 )
                 .then((response) => {
                   setProducts(response.data);
@@ -173,7 +173,7 @@ const PanelCard = () => {
               ) {
                 axios
                   .get(
-                    "http://localhost:4000/Adms/AllAdmsFilterAdmType/" +
+                    "https://ah-backend-fi2p.onrender.com/Adms/AllAdmsFilterAdmType/" +
                       selectedAdmType["name"]
                   )
                   .then((response) => {
@@ -200,7 +200,7 @@ const PanelCard = () => {
 
                   axios
                     .get(
-                      "http://localhost:4000/Adms/AllAdms4/" +
+                      "https://ah-backend-fi2p.onrender.com/Adms/AllAdms4/" +
                         documentNumber +
                         "/" +
                         agent["Agency Code"]
@@ -225,7 +225,7 @@ const PanelCard = () => {
                   ) {
                     axios
                       .get(
-                        "http://localhost:4000/Adms/AllAdms5/" +
+                        "https://ah-backend-fi2p.onrender.com/Adms/AllAdms5/" +
                           documentNumber +
                           "/" +
                           agent["Agency Code"] +
@@ -252,7 +252,7 @@ const PanelCard = () => {
                     ) {
                       axios
                         .get(
-                          "http://localhost:4000/Adms/AllAdms6/" +
+                          "https://ah-backend-fi2p.onrender.com/Adms/AllAdms6/" +
                             documentNumber +
                             "/" +
                             agent["Agency Code"] +
@@ -281,7 +281,7 @@ const PanelCard = () => {
                       ) {
                         axios
                           .get(
-                            "http://localhost:4000/Adms/AllAdms7/" +
+                            "https://ah-backend-fi2p.onrender.com/Adms/AllAdms7/" +
                               documentNumber +
                               "/" +
                               agent["Agency Code"] +
@@ -312,7 +312,7 @@ const PanelCard = () => {
                         ) {
                           axios
                             .get(
-                              "http://localhost:4000/Adms/AllAdms1/" +
+                              "https://ah-backend-fi2p.onrender.com/Adms/AllAdms1/" +
                                 agent["Agency Code"] +
                                 "/" +
                                 admNumber
@@ -337,7 +337,7 @@ const PanelCard = () => {
                           ) {
                             axios
                               .get(
-                                "http://localhost:4000/Adms/AllAdms2/" +
+                                "https://ah-backend-fi2p.onrender.com/Adms/AllAdms2/" +
                                   agent["Agency Code"] +
                                   "/" +
                                   admNumber +
@@ -364,7 +364,7 @@ const PanelCard = () => {
                             ) {
                               axios
                                 .get(
-                                  "http://localhost:4000/Adms/AllAdms3/" +
+                                  "https://ah-backend-fi2p.onrender.com/Adms/AllAdms3/" +
                                     agent["Agency Code"] +
                                     "/" +
                                     admNumber +
@@ -393,7 +393,7 @@ const PanelCard = () => {
                               ) {
                                 axios
                                   .get(
-                                    "http://localhost:4000/Adms/AllAdms10/" +
+                                    "https://ah-backend-fi2p.onrender.com/Adms/AllAdms10/" +
                                       selectedAdmType["name"] +
                                       "/" +
                                       user["username"]
@@ -418,7 +418,7 @@ const PanelCard = () => {
                                 ) {
                                   axios
                                     .get(
-                                      "http://localhost:4000/Adms/AllAdms8/" +
+                                      "https://ah-backend-fi2p.onrender.com/Adms/AllAdms8/" +
                                         admNumber +
                                         "/" +
                                         selectedAdmType["name"]
@@ -443,7 +443,7 @@ const PanelCard = () => {
                                   ) {
                                     axios
                                       .get(
-                                        "http://localhost:4000/Adms/AllAdms9/" +
+                                        "https://ah-backend-fi2p.onrender.com/Adms/AllAdms9/" +
                                           admNumber +
                                           "/" +
                                           selectedAdmType["name"] +
@@ -472,7 +472,7 @@ const PanelCard = () => {
                                     ) {
                                       axios
                                         .get(
-                                          "http://localhost:4000/Adms/AllAdms11/" +
+                                          "https://ah-backend-fi2p.onrender.com/Adms/AllAdms11/" +
                                             documentNumber +
                                             "/" +
                                             agent["Agency Code"] +
@@ -501,7 +501,7 @@ const PanelCard = () => {
                                       ) {
                                         axios
                                           .get(
-                                            "http://localhost:4000/Adms/AllAdms12/" +
+                                            "https://ah-backend-fi2p.onrender.com/Adms/AllAdms12/" +
                                               documentNumber +
                                               "/" +
                                               agent["Agency Code"] +
@@ -529,7 +529,7 @@ const PanelCard = () => {
                                         ) {
                                           axios
                                             .get(
-                                              "http://localhost:4000/Adms/AllAdms13/" +
+                                              "https://ah-backend-fi2p.onrender.com/Adms/AllAdms13/" +
                                                 agent["Agency Code"] +
                                                 "/" +
                                                 selectedAdmType["name"]
@@ -555,7 +555,7 @@ const PanelCard = () => {
                                           ) {
                                             axios
                                               .get(
-                                                "http://localhost:4000/Adms/AllAdms14/" +
+                                                "https://ah-backend-fi2p.onrender.com/Adms/AllAdms14/" +
                                                   agent["Agency Code"] +
                                                   "/" +
                                                   user["username"]
@@ -793,7 +793,7 @@ const PanelCard = () => {
     data: agents,
     loading: loading1,
     error: error1,
-  } = useFetch("http://localhost:4000/Agents/AllAgents");
+  } = useFetch("https://ah-backend-fi2p.onrender.com/Agents/AllAgents");
 
   //const agents = [...data1];
   // setAgents(data);
@@ -813,7 +813,7 @@ const PanelCard = () => {
     data: users,
     loading: loading2,
     error: error2,
-  } = useFetch("http://localhost:4000/Users/AllUsers");
+  } = useFetch("https://ah-backend-fi2p.onrender.com/Users/AllUsers");
 
   const onChangeMethodUsername = (e) => {
     setUser(e.value);

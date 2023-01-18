@@ -47,13 +47,13 @@ function CreateStep2Flown() {
     data: froms,
     loading: loading1,
     error: error1,
-  } = useFetch("http://localhost:4000/Cities/AllCities");
+  } = useFetch("https://ah-backend-fi2p.onrender.com/Cities/AllCities");
 
   const {
     data: tos,
     loading: loading2,
     error: error2,
-  } = useFetch("http://localhost:4000/Cities/AllCities");
+  } = useFetch("https://ah-backend-fi2p.onrender.com/Cities/AllCities");
   const BackFunction = () => {
     navigate("/CreateStep1");
   };

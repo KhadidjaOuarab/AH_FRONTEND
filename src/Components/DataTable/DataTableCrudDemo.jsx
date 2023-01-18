@@ -186,9 +186,9 @@ function DataTableCrudDemo(props) {
     // setProducts(_products);
     setDeleteProductDialog(false);
     setProduct(emptyADM);
-    console.log("http://localhost:4000/Adms/DeleteAdm/" + product._id);
+    console.log("https://ah-backend-fi2p.onrender.com/Adms/DeleteAdm/" + product._id);
     axios
-      .delete("http://localhost:4000/Adms/DeleteAdm/" + product._id)
+      .delete("https://ah-backend-fi2p.onrender.com/Adms/DeleteAdm/" + product._id)
       .then((response) => {
         // setProduct(response.data);
         console.log(products);

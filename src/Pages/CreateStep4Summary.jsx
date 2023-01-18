@@ -19,7 +19,7 @@ function CreateStep1() {
   const toast = useRef(null);
   const SaveADM = () => {
     axios
-      .post("http://localhost:4000/Adms/CreateAdm", products)
+      .post("https://ah-backend-fi2p.onrender.com/Adms/CreateAdm", products)
       .then((response) => {
         console.log(response.data);
       })
@@ -119,6 +119,9 @@ function CreateStep1() {
   ];
   const BackFunction = () => {
     navigate("/Anomaly");
+  };
+  const ListFunction = () => {
+    navigate("/home");
   };
   console.log("useSelectoruseSelectoruseSelectoruseSelector");
   console.log(products);
@@ -279,7 +282,7 @@ function CreateStep1() {
           label="ADM List"
           icon="pi pi-times"
           classname="p-button-info w-10rem"
-          searchFunction={BackFunction}
+          searchFunction={ListFunction}
         />
       </div>
     </>

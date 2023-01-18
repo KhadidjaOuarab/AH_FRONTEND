@@ -23,7 +23,7 @@ function CreateStep4SummaryEdit() {
     console.log("http://localhost:4000/Adms/UpdateAdm/"+admNo);
     console.log("EditADMEditADMEditADMEditADMEditADMEditADMEditADM")
     axios
-      .put("http://localhost:4000/Adms/UpdateAdm/"+admNo, products)
+      .put("https://ah-backend-fi2p.onrender.com/Adms/UpdateAdm/"+admNo, products)
       .then((response) => {
         console.log("response.dataresponse.dataresponse.dataresponse.data");
         console.log(response.data);

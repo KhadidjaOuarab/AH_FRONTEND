@@ -61,7 +61,7 @@ function CreateStep3AnomalyEdit() {
     data: currencies,
     loading: loading1,
     error: error1,
-  } = useFetch("http://localhost:4000/Currencies/AllCurrency");
+  } = useFetch("https://ah-backend-fi2p.onrender.com/Currencies/AllCurrency");
   return (
     <div>
       <MenuBar />
