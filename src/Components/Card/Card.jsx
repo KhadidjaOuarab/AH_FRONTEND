@@ -46,7 +46,6 @@ function Card() {
         console.log(error.value);
       });
   };
-
   return (
     <div className="Card">
       <Label labelClass="LabelPurple" label="Login" />
